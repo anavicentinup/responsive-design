@@ -5,8 +5,19 @@
 }
 
 
+/*variables: reserva en la memoria de mi pc*/
+/*root: raiz*/
+:root { 
+--black: hsl(212, 21%, 14%);
+--grey: hsl(228, 12%, 48%);
+--cream: hsl(30, 38%, 92%);
+--white: hsl(0, 0%, 100%);
+--green500: hsl(158, 36%, 37%);
+--green700: hsl(158, 42%, 18%);
+}
+
 body {
-    background-color: rgba(250, 229, 203, 0.99);
+    background-color: hsl(30, 38%, 92%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,20 +58,30 @@ h2{
 }
 
 .description p {
-    font-size: 15px;
+    font-size: 14px;
     margin: 10px 30px 10px 40px;
     line-height: 20px;
     color: grey;
+    font-family:"montserrat" ;
+    font-weight: 500;
 }
 
-.price {
-    display: flex;
-    justify-content: space-evenly;
-}
+.price{
+    display: flex;}
 
-.price p { 
-    text-decoration: line-through;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: ;
-}
+    #origin{
+        text-decoration: line-through;
+        color:  hsl(212, 21%, 14%);
+        margin-left: 10px;
+        color: var(--grey)
+    }
+
+    #discount{
+        color:hsl(158, 36%, 37%);
+        font-size: 30px;
+        margin-right: 20px;
+        font-family: "fraunces";
+        font-weight: 700;
+        
+    }
+
