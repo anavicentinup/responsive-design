@@ -13,19 +13,38 @@
 
 /*opacity: 0 (lo hace invisble pero aun ocupa espacio)*/
 .content-celular {
-    opacity: ;
+    opacity: 0 ;
 }
 
 /*color: transparent (lo hace invisble pero aun ocupa espacio)*/
 .content-pc {
-    color: ;
+    color: transparent;
 }
+body{
+    background-color: blue;
+}
+
+
+
 
 /*display none: elimina un elemento html del archivo css haciendo que desaparezca y ajustando su espacio al contenido*/
 .content-celular {
-    display: ;
+    display: none ;
 }
 
+@media(max-width:880px){
+    body{
+        background-color: gold;}
+        h1{
+            color: brown;
+            text-align: center;
+            transform: rotate(180deg);
+        }
+        .container{
+            border-radius: 30px;
+            border:30px;
+        }
+    }
 
 
 /*media querie(consulta de medios): mientras el ancho sea como max de 480 px agrega las siguientes propiedades*/
@@ -33,18 +52,24 @@
     body {
         background-color: rgb(0, 229, 255);
     }
-
+    .container{
+        border-radius: 0;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        transform: rotate(0deg);
+    }
+    .content-celular{
+        display: block;
+        text-align: center;
+        font-size: larger;
+        font-style: italic;
+        color: hotpink;
+        
+    }
     .content-pc {
-        display: none;
-    }
-}
-
-@media(min-width: 481px) {
-    body {
-        background-color: deeppink;
-    }
-
-    .content-celular {
         display: none;
     }
 }
