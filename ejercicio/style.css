@@ -82,6 +82,20 @@ h2{
         margin-right: 20px;
         font-family: "fraunces";
         font-weight: 700;
-        
+   
     }
 
+    button{
+        background-color:var(--green700);
+        margin: 20px 80px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        width: 150px;
+        height: 30px;
+        color: var(--white);
+    }
+button img {
+    margin: 0px 10px;
+    width:10px ;
+}
